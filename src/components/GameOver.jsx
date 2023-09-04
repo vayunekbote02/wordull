@@ -2,8 +2,7 @@ import { useContext } from "react";
 import { BoardContext } from "../App";
 
 const GameOver = () => {
-  const { gameOver, setGameOver, correctWord, currAttempt } =
-    useContext(BoardContext);
+  const { gameOver, correctWord, currAttempt } = useContext(BoardContext);
   return (
     <div>
       <h3 className="text-xl">

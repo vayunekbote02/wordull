@@ -44,6 +44,7 @@ function App() {
       setCurrentAttempt({ row: currAttempt.row + 1, column: 0 });
     } else {
       alert("The typed word does not exist!");
+      return;
     }
 
     if (currWord === correctWord) {
@@ -65,9 +66,9 @@ function App() {
   };
 
   return (
-    <div className="text-center bg-[#121212] text-white max-sm:absolute">
+    <div className="text-center bg-[#121212] text-white max-sm:absolute min-h-screen">
       <nav className="h-16 w-full m-0 border-b-[1px] border-solid border-b-gray-500">
-        <h1 className="m-0 text-wordle text-white font-sans">Wordle</h1>
+        <h1 className="m-0 text-wordle text-white font-sans">Wordull</h1>
       </nav>
       <BoardContext.Provider
         value={{
